@@ -44,8 +44,8 @@ import os
 from py-acc import acc
 os.environ['ACC_SHIPTO'] = '0000123456'
 os.environ['ACC_ENV'] = 'PROD'
-os.environ['ACC_UAT_CERT'] = '/path/to/acc/prod/cert.pem'
-os.environ['ACC_UAT_PRIVATE_KEY'] = '/path/to/acc/prod/cert_private_key.pem'
+os.environ['ACC_PROD_CERT'] = '/path/to/acc/prod/cert.pem'
+os.environ['ACC_PROD_PRIVATE_KEY'] = '/path/to/acc/prod/cert_private_key.pem'
 
 post_data, full_response, error_code, error_message, call_type = acc.three_sixty_lookup(device_id='C021T5AFAK3')
 ```
